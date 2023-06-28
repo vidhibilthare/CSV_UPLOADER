@@ -19,8 +19,8 @@
             <td>{{forloop.counter}}</td>
             <td>{{file.file.name}}</td>
             <td>
-                <a href="download_file">Download</a>
-                <a href="view_file.html">View</a>
+                <a href="{% url 'downloade_file' file.id %}">Download</a>
+                <a href="{% url 'view_file' file.id %}">View</a>
             </td>
         </tr>
         {% endfor %}

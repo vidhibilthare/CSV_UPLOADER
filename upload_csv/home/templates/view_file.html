@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1></h1>
+<h1>{{file_name}}</h1>
 
 <table>
-    table data
+    {{ table_data|safe }}
 </table>
+{% endblock %}
